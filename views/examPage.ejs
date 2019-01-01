@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title> Exam Page </title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="/stylesheets/timer.css">
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/bootstrap.js"></script>
+    <script src="/javascripts/examPagejQuery.js"></script>
+    <script src="/javascripts/solvedExamPagejQuery.js"></script>
+
+</head>
+<body>
+<div id="welcome"></div>
+<div class="jumbotron text-center">
+    <h1 id="examType"><%= message %></h1>
+    <h3>WELCOME TO THE EXAM GOD BE WITH YOU! :) </h3>
+</div>
+<div id="timer">
+
+    <div id="minutes"></div>
+    <div id="seconds"></div>
+
+</div>
+<div id="mark" name="mark"></div>
+
+<div id="exam"></div>
+<input type="text" name="hiddenInput" id="hiddenInput" hidden>
+<button type="submit" value="submit" class="btn btn-primary" id="submit"> Correct Exam</button>
+
+<form action = "/exams/returnExamType" method="post">
+    <input type="hidden" name="hiddenInput" id="hiddenInput2">
+    <div id="nextExam"></div>
+    <!--<button type="submit" class="col-md-2 btn btn-dark" id="java">java</button>-->
+
+</form>
+
+<form action="/candidates/homepage" method="get">
+    <button type="submit" id="backButton" class="btn btn-primary"> Back </button>
+</form>
+
+
+
+<form></form>
+
+</body>
+</html>

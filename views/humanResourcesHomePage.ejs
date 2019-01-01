@@ -1,0 +1,110 @@
+<html>
+<head>
+
+    <title> Human Resources Home Page </title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/humanResourcesJQuery.js"></script>
+    <script src="/javascripts/bootstrap.js"></script>
+    <style>
+        table {
+            border-radius:20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">welcome <%= message%></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item active">
+                    <form id="myform" method="get" action="/humanResources/logout">
+                        <a href="#"  class="nav-link" onclick="document.getElementById('myform').submit()">Logout </a>
+                    </form>
+                </li>
+            </ul>
+            <form class="form-inline" action="/humanResources/searchPage" method="post">
+                <input name="searchCriteria" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <table class="table table-secondary">
+            <thead >
+            <tr>
+                <th> From </th>
+                <th> Message </th>
+            </tr>
+            </thead>
+            <tbody id="messageTable"></tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <table class="table table-secondary">
+            <thead>
+            <tr>
+                <th> UserName </th>
+                <th> View CV </th>
+                <th> Approve </th>
+                <th> Disapprove </th>
+            </tr>
+            </thead>
+            <tbody id="table"></tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <div id="pdf" class="row"></div>
+    </div>
+
+    <div class="container">
+        <div id="generateExams"></div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+        <table class="table table-secondary">
+            <thead>
+            <tr>
+                <th> UserName </th>
+                <th> Show Full Test </th>
+                <th> Add Test </th>
+                <th> Summarized Report  </th>
+            </tr>
+            </thead>
+            <tbody id="candTests"></tbody>
+            <tr></tr>
+        </table>
+    </div>
+</div>
+
+    <div class="container" id = "types"></div>
+
+    <div class="container">
+        <div class="row">
+            <form action="/exams/goToSolvedExam" method="post">
+                <input type="hidden" name="hiddenInput" id="hiddenInput">
+                <div class="col-md-10" id="buttonsTests"></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container" id = "summarizedReport"></div>
+    </div>
+
+
+
+
+</body>
+</html>

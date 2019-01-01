@@ -1,0 +1,3 @@
+{ "_id" : { "$oid" : "5c28cc5ec0871f11e84fe1d8" }, "approved" : true, "name" : "laura", "userName" : "laura", "email" : "laura@gmail.com", "password" : "123", "telephoneNumber" : "012", "cv" : "7a8d49937cb44c81ceefb5360c39f149", "__v" : 0 }
+{ "_id" : { "$oid" : "5c2a50e001c0d114e367bedd" }, "approved" : false, "name" : "sandra", "userName" : "sandra", "email" : "sandra@gmail.com", "password" : "1234", "telephoneNumber" : "", "cv" : "bd30631c3d737ef76502e65bf134d41a", "__v" : 0 }
+{ "_id" : { "$oid" : "5c2b24de2f9ec71be8f7a5d9" }, "approved" : true, "name" : "jan", "userName" : "jan", "email" : "jan@gmail.com", "password" : "1234", "telephoneNumber" : "", "cv" : "ef1937b206e7b28e00b5cd817d230d05", "__v" : 0 }

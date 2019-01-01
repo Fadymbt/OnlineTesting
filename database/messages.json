@@ -1,0 +1,2 @@
+{ "_id" : { "$oid" : "5c2b25212f9ec71be8f7a5db" }, "from" : "sandra", "to" : "jan", "Message" : "you have c++exam ", "__v" : 0 }
+{ "_id" : { "$oid" : "5c2b25862f9ec71be8f7a5dc" }, "from" : "System", "to" : "HR", "Message" : "jan has finished his/her c++ Exam", "__v" : 0 }
