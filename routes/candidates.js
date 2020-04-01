@@ -25,7 +25,6 @@ let sessionChecker = (req, res, next) => {
     } else {
         res.render("candidatesLogin", {message: ""});
     }
-
 };
 
 ///////////////////////// LOGIN Candidate //////////////////////////////

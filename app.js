@@ -12,6 +12,7 @@ const candidatesRouter = require('./routes/candidates');
 const humanResourcesRouter = require('./routes/humanResources');
 const typesRouter = require('./routes/types');
 const examRouter = require('./routes/exams');
+
 const app = express();
 
 app.use(cookieParser());
